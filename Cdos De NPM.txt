@@ -1,0 +1,79 @@
+/-------------------------------- Actualizar Node y NPM ---------------------------------------------/
+Primero es necesario instalar nvm
+
+> nvm install latest                                        Instala la ultima version de node y npm
+
+/-------------------------------- Comandos De NPM ---------------------------------------------/
+            ------ Configuracion por defecto ------ 
+
+> npm set init.author.email "email@example.com"             Establece el correo por defecto
+> npm set init.author.name "Miguel Parra"                   Establece el nombre por defecto
+> npm set init.licese "MIT"                                 Establece la lisencia por defecto
+
+            ------ Inicialisando un proyecto ------ 
+> npm init                                                  Permite iniciar el proyecto creando el archivo package.json y se debe de resolver las preguntas...
+ 
+> npm init -y                                               Permite iniciar el proyecto creando el archivo package.json con las respuestas por defecto.
+
+            ------ Instalacion ------ 
+
+                                ------ Dependencias locales ------ 
+> npm i <install> (name_dependencia)                        Instalacion de dependencias
+
+                                ------ Dependencias globales ------ 
+> npm i -g (name_dependencia)                               Instala la dependecias demanera global
+
+
+            ------ Desinstalacion ------ 
+                                ------ Dependencias locales ------ 
+> npm r <uninstall> (name_dependencia)                      Desinstalar dependecia 
+
+                                ------ Dependencias globales ------ 
+> npm r -g (name_dependencia)                               Desinstalar dependecia de manera global
+
+                            ------ Dependencias De Desarrollador ------ 
+> npm i -D <--save-dev> (name_dependencia)                  Instala el paquete en el proyecto, como dependencia de desarrollo.
+
+                            ------ Dependencias De Produccion ------ 
+> npm i -P <--save> o <--save-prod> (name_dependencia)                  Instala el paquete en el proyecto, como dependencia de producción.
+
+                            ------ Actualizacion de paquetes ------ 
+
+> npm outdated                                              Consultar las últimas versiones compatibles con las librerías que tienes en tu proyecto
+
+> npm i (name_dependencia)@latest                           Permite actualizar cualquier dependecia a su ultima version
+> npm update                                                Actualiza todos los paquetes desactualizados en el proyecto
+
+> npm update -save                                          Actualiza todas las librerias del proyecto que sean compatibles
+
+                            ------ Mostrar e instalar dependecias exactas ------
+> npm show @(name_dependencia) versions                     Muestra las versiones disponibles de una dependecia
+> npm i @(name_dependencia)@(N°_de_version)                 Instala la version exacta de la dependecia
+
+
+                            ------ Listar dependecias ------
+> npm ls <list> -g --depth 0                                Permite saber la lista de dependecias globales (--depth 0) indica que muestre los paquetes principales        
+
+                            ------ Buscar dependecias ------
+> npm search (name_dependencia)                             Permie buscar una dependecia dentro de la web de npm
+                            ------ Auditar dependecias ------
+> npm audit                                                 Permite auditar las dependecias del proyecto
+> npm audit --json                                          Permie generar un json para identificar mejor los detalles
+
+> npm audit fix                                             Permite corrigir todos los errores del proyecto
+
+                            ------ Evalua el estado de Node y npm ------
+> npm doctor                        Para comprobar el estado de nuestra instalación de Node y npm
+
+                            ------ Sistema de actualización de dependencias de NPM ------
+
+> npm-check  <bandera o atributo>
+
+    -u      	Abre el menú interactivo de actualización
+    -y          Actualiza todo sin preguntar.
+    -p          Actualiza las dependecias sólo las de producción.
+    -d          Actualiza las dependecias sólo las de desarrollo
+    -g          Actualiza los paquetes globales del sistema, no los del proyecto.
+
+
+

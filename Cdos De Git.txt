@@ -1,0 +1,162 @@
+/-------------------------------- Comandos De Git - Calve-ssh( jmiguelp0990 ) ---/
+                                        ------ Configuración de las credenciales de usuario ------ 
+> git config --list                                         Para ver la configuración pordefecto de git
+> git config --list --show-origin                           Permite ver donde estan guardadas las configuraciones
+> git config --global user.name "Miguel_Parra"              Para definir el usuario.
+> git config --global esser.email "pmjm0990@gmail.com"      Para definir el correo.
+
+> git config --global -l                                    Para ver las ultimas credenciales de git.
+
+> git init                                                  Para iniciar el repositorio en la carpeta.
+> git status                                                Para ver el estado de los archivos si estan en seguimiento
+
+> git diff (Archivo).ext                                    Para ver la diferencia entre los ultimos cambios hechos en el codigo
+> git diff (id-commit viejo) (id-commit nuevo)              Para ver la diferencia entre dos commits que no son consecutivos
+
+/-------------------------------- ESPACIO DE TRABAJO ---/
+> git add (Archivo).ext                                     Para agregar archivos al STAGIN AREA                                                   
+
+> git clean --dry-run                                       Para ver una lista de todos los archivos que quiero borrar del proyecto
+> git clean -f                                              Permite borrar los archivos que se describieron con el comando anteirior
+
+/-------------------------------- STAGIN AREA ---/
+> git rm --cached (Archivo).ext                             Para regresar los archivos al ESPACIO DE TRABAJO
+> git rm --force (Archivo).ext                              Para eliminar los archivos de GIT y del disco duro
+
+> git reset HEAD (Archivo).ext                              Permite para sacar archivos del STAGIN AREA, sin borrar nada, para enviarlos en otro commit 
+
+> git commit -m "Mensaje del commit"                        Para enviar los archivos al REPOSITORIO LOCAL
+/-------------------------------- REPOSITORIO LOCAL ---/
+> git reset (id-commit) --hard                              Todos los archivos regresan al commit que se escoje, 
+                                                            eliminando todo los cambios posteriores y los guardados en STAGIN AREA, a ese commit. 
+
+> git reset (id-commit) --soft                              Todos los archivos regresan al commit que se escoje, 
+                                                            eliminando todos los cambiso proteriores a ese commit, pero mantiene lo que esta en STAGIN AREA.
+
+> git checkout (id-commit) (Archivo).ext                    Para ver como era el archivo en ese commit y poder regresar al ultimo 
+                                                            -(Si se hace un commit aqui y se borran los cambios posteriores)
+
+> git push (Name_Repo_remoto) (Name_Branch)                 Para enviar los commits hechos al REPOSITORIO REMOTO
+
+/-------------------------------- REPOSITORIO REMOTO ---/
+> git branch -M main                			            Permite cambiar el nombre de la rama a (MAIN)
+> git remote add (Name_Repo_remoto) (url)                   Permite indicarle a Git que agrege un REPOSITORIO REMOTO
+> git remote set-url (Name_Repo_remoto) (url)               Permite cambiar la url de un repositorio remoto
+
+> git remote                                                Permite ver los repositorios remotos
+> git remote -v                                             Permite ver los repositorio remotos junto con al url
+
+> git fetch                                                 Permite traer los ultimos cambios hechos, solo al REPOSITORIO LOCAL
+> git merge                                                 Permite fusionar los archivos del REPOSITORIO LOCAL con los archivos del ESPACIO DE TRABAJO
+
+> git pull (Name_Repo_remoto) (Name_Branch)                 Permite traer los ultimos cambios y guardarlos en el REPOSITORIO LOCAL y en el ESPACIO DE TRABAJO
+
+> git pull (Name_Repo_remoto) (Name_Branch) --allow-unrelated-histories  -  Permite fusionar la rama (main o master) remota con la rama (main o master) local
+
+> git clone (url) o (local)                                 Permite clonar todos los archivos y enviarlos al REPOSITORIO REMOTO y al ESPACIO DE TRABAJO
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+/-------------------------------- Mis - Alias ---/
+> alias (Name_Alias)="Comando-De-Git"                       Permite crear un alias respecto a un comando muy extenso o dificil de recordar
+
+> git shortlog                                              Permite ver el cuantos commit's han hecho cada miembro del equipo
+
+> git shortlog -sn                                          Permite ver cuantos commit's han hecho cada miembro del equipo, de manera resumida
+> git shortlog -sn --all                                    Permite ver cuantos commit's han hecho cada miembro del equipo incluso los eliminados, de manera resumida
+
+> git shortlog -sn --all --no-merges                        Permite ver cuantos commit's han hecho cada miembro del equipo incluso los eliminados 
+                                                            sin contar los merges, de manera resumida
+/-------------------------------- HISTORIAL ---/
+
+> git log (Archivo).ext                                     Para ver el historial reciente detallado de los commit's
+> git log --all                                             Permite ver todo el historial detallado de los commit's
+> git log --all --graph                                     Permite ver todo el historial detallado de los commit's junto con graficos de las ramas
+> git log --all --graph --decorate --oneline                Permite ver todo el historial de los commit's junto con graficos de las ramas como resumen
+
+> git log --stat                                            Permite ver los cambios en especificos que se hacen en los archivos a partir del commit 
+> gitk                                                      Permite emerger una ventana, donde se puede visualizar todo lo que ha sucedido de manera grafica
+
+> git show (Archivo).ext                                    Permite ver los ultimos cambios detalladamente de un archivo 
+> git show-branch                                           Permite ver las ramas que existen y sus historias en conjunto de los mensajes por commit
+> git show-branch --all                                     Permite ver las ramas que existen y sus historias en conjunto de los mensajes por commit detalladamente.
+
+> git reflog                                                Permite ver completamente todos los commits y ramas que se han creado o eliminado
+
+> git blame (Name_Archivo)                                  Permite ver detalladamente quien ha modificado linea por linea al archivo
+> git blame -c (Name_Archivo)                               Permite ver detalladamente quien ha modificado linea por linea al archivo con el codigo mejor identado
+
+> git blame (Name_Archivo) -L(N°),(N°)                      Permite ver detalladamente quien cambio el archivo entre un rango de lineas
+
+/-------------------------------- RAMAS ---/
+
+> git branch                                                Permite ver todas las ramas locales creadas y en cual se esta posicionado
+> git branch (Name_Branch)                                  Permite crear una nueva rama, definiendo el nombre de la rama.
+
+> git branch -r                                             Permite ver todas las ramas remotas creadas que estan en el servidor.
+> git branch -a                                             Permite ver todas las ramas (remotas y locales) que se han creado
+
+> git checkout (Name_Branch)                                Permite moverme a otra rama
+
+> git merge  (Name_Branch)                                   Permite unir la rama externa a la rama principal (main o master) 
+/*Siempre unir (merge) estando parados desde la rama principal (mani o master), para traer los cambios de la rama externa.
+Cuando se hace la union de dos ramas git lo considera un commit, por eso se debe escribir un mensaje*/
+
+> git branch -D (Name_Branch)                               Permite eliminar una rama, posteriormente creada.
+
+/-------------------------------- TAGS ---/
+> git tag -a v(N°) -m "Mensaje" (id-commit)                 Permite crear la asiciacion de una version o tag del proyecto respecto a un commit
+/*Una version o tag de un proyecto es considerado un nuevo commit*/
+
+> git tag                                                   Permite ver la lista de versiones o tag's hechas con anterioridad.
+> git show-ref --tags                                       Permite ver el tag o la version asociado a el id-commit.
+
+> git push (Name_Repo_remoto) --tags                        Permite enviar todos los tag's o version al REPOSITORIO REMOTO
+
+> git tag -d (Name_tags)                                    Para eliminar un tag en especial
+
+/-------------------------------- ARRREGLO DE BUGS ---/
+
+> git rebase (Name_Branch)                                  Permite rescribir la historia de los commits en la rama de trabajo, 
+                                                            junto con los commits de una rama de arreglo de bugs
+/*Siempre primero se hace rebase a la rama donde se arrgla el bug y luego se hace rebase en la rama de trabajo */
+/* Este comando solo es usable con ramas locales, no es recomendable enviar la rama a un repositorio remoto*/
+
+/-------------------------------- COMMITS ---/
+
+> git cherry-pick (id-commit)                               Permite traer un commit en especifico antiguo de una rama si estoy parado en otra rama
+
+
+/-------------------------------- GUARDAR CAMBIOS SIN COMMIT ---/
+
+> git stash                                                 Permite guardar los cambios momentariamente, para moverme a otra rama sin hacer un commit innecesario
+> git stash list                                            Permite ver una lista de todos los stash hechos, que guardan cambios momentarios
+
+> git stash pop                                             Permite restaurar los cambios que se hizieron en la propia rama antes de moverse a otra.
+
+> git stash branch (Name_Branch)                            Permite poner los cambios guardados momentariamente en una nueva rama
+
+> git stash drop                                            Permite que borre ese almacenamiento momentario de los cambios sin restaurarlo con ´git stash pop´
+
+/-------------------------------- CORREGIR ERROES ---/
+
+/*Este comando permite enviar archivos o enviar correcciones de codigo que debieron ir en el commit anterior*/
+> git commit --amend                                        Permite agregar los cambios recientes al commit anteirior en caso de cometer un error
+
+>git reset --hard (id-commit)                               Permite resetear todos los cambios hasta el id-commit correcto que se escoje,
+                                                            eliminando todo los cambios posteriores y los guardados en STAGIN AREA, a ese commit.
+
+> git reset --soft (id-commit)                              Permite resetear todos los cambios hasta el id-HEAD correcto que se escoje,
+                                                            eliminando todos los cambiso proteriores a ese commit, pero mantiene lo que esta en STAGIN AREA.
+
+/-------------------------------- BUSCAR UNA PALABRA ---/
+
+> git grep (Palabra)                                        Permite buscar una palabra dentro de todos los archivos en una rama.
+
+> git grep -n (Palabra)                                     Permite buscar una palabra dentro de todos los archivos en una rama y nos indica en que linea estan 
+
+> git grep -c (Palabra)                                     Permite contar el numero de veces que se encunetra una palabra en todos los archivos de una rama.
+/*Si se buscan lineas de codigo se usan comillas "<p>"*/
+
+> git log -S "Palabra"                                      Permite buscar una palabra dentro de el historial de commit's.
+

@@ -1,0 +1,37 @@
+
+
+ctrl + t                        Abrir una ventana
+
+ctrl + w                        Cierra una ventana
+
+ctrl + tab                      Permite cambiar entre ventanas abiertas
+
+alt + shift + a                 comentar codigo  seleccionado 
+
+ctrl + shift + l                Permite seleccionar todas las palbras iguales dentro del archivo
+
+ctrl + shift + k                Borrar lineas completas
+
+ctrl + z                        Deshace la ultima accion hecha
+
+ctrl + shift + z                Deshace la ultima accion hecha por el ctrl + z
+
+ctrl + alt + w                  Permite en serrar el texto seleccionado entre las etiquetas que se Deshace
+
+ctrl + shift + u                Cambiar a mayusculas
+
+ctrl + alt + u                  Cambiar a minusculas
+
+ctrl + alt + dobleClik          Selecciona varaias palabras con el multicursor
+
+ctrl + d                        Crea un cursor sobre la palabra en la que este parado el primer cursor
+
+ctrl + p                        Permite abrir la barra de acceso rapido
+    @ permite ver las propiedades, funcion y metodos dentro del archivo
+    : permite ir a la linea que se quiere dentro del archivo
+    > permite buscar cualquier funcionalidad, comando  dentro de VSC
+
+ctrl +  f                       abra la barra de navegacion dentro del archivo y se busca una palabra
+
+ctrl + shift + f                Permite buscar una palabra dentro de todos los archivos del proyecto
+

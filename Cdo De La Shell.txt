@@ -1,0 +1,67 @@
+Comandos de la consola de windows
+
+Proporciona información de ayuda de los comandos        >help
+Permite designar un nombre a la ventana de la consola   >title
+Permite cambiar el color de la consola                  >color (N° color fondo)(N° color letra)
+--------------------------------------------------------------------------------
+---- Comandos de navegación entre directorios ----
+
+
+Reinicia la consola                                                         >cmd
+Mostrar la ubicacion donde se encuentra                                     >cd
+Permite cambiar de directorio                                               >cd (NomDirectorio)
+Permite retroceder de directorio                                            >cd..
+Permite mostrar una lista de todos los archivos dentro de un directorio     >dir
+
+permite crear un directorio                                                 >md
+permite crear un directorio                                                 >mkdir
+
+
+Permite eliminar archivos                                                   >del
+Borrar la pantalla                                                          >cls
+
+Para iniciar una nueva ventana de la shell                                  >start
+Para cerrar una ventana de la shell                                         >exit
+--------------------------------------------------------------------------------
+---- Comandos sobre información del sistema ----
+
+Muestra o establece la hora del sistema                                     >time
+Muestra o establece la fecha                                                >date
+Muestra la version de windows                                               >ver
+Muestra el volumen y el número de serie del disco                           >vol   
+Muestra las propiedades y la configuración especifica del equipo            >systeminfo
+Muestra todas las tareas en ejecución, incluidos los servicios              >tasklist 
+
+
+
+
+--------------------------------------------------------------------------------
+
+Muestra graficamente la estructura de directorios de una unidad o ruta      >tree
+Muestra el contenido de un archivo de texto                                 >type
+
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -5,14 +5,14 @@ const Skills = () => {
 
     return (
         <>
-            <section className="text-blueGray-700 ">
-                <div className="container flex flex-col items-center px-5 py-8 mx-auto">
+            <section className="text-blueGray-700">
+                <div className="container flex flex-col items-center px-5 py-6 mx-auto">
                     <div className="flex flex-col w-full mb-12 text-left ">
                       <div className="w-full mx-auto lg:w-1/2">
                         <h2 className="mx-auto mb-6 text-xl font-semibold leading-none tracking-tighter text-black title-font">
                         📌 Mis habilidades técnicas en...
                         </h2>
-                        <h3 className="mx-auto mb-3 text-lg font-semibold leading-none tracking-tighter text-black title-font">
+                        <h3 className="mx-auto mb-4 mt-3 text-lg font-semibold leading-none tracking-tighter text-black title-font">
                         ⚙ Herramientas
                         </h3>
                         <p className="flex items-center mb-1 ml-4 font-semibold text-blueGray-700 ">
@@ -45,7 +45,7 @@ const Skills = () => {
                           </svg>
                           Windows | GNU/Linux - Devian, Ubunto
                         </p>
-                        <h3 className="mx-auto mb-3 text-lg font-semibold leading-none tracking-tighter text-black title-font">
+                        <h3 className="mx-auto mb-4 mt-3 text-lg font-semibold leading-none tracking-tighter text-black title-font">
                         ✨ Front end
                         </h3>
                         <p className="flex items-center mb-1 ml-4 font-semibold text-blueGray-700 ">
@@ -96,7 +96,7 @@ const Skills = () => {
                           </svg>
                           Slack | Discod | Zoom | MS Teams
                         </p>
-                        <h3 className="mx-auto mb-3 text-lg font-semibold leading-none tracking-tighter text-black title-font">
+                        <h3 className="mx-auto mb-4 mt-3 text-lg font-semibold leading-none tracking-tighter text-black title-font">
                         🔎 Test
                         </h3>
                         <p className="flex items-center mb-1 ml-4 font-semibold text-blueGray-700 ">
@@ -105,7 +105,7 @@ const Skills = () => {
                           </svg>
                          Jest | Cypress | Mocha 
                         </p>
-                        <h2 className="mx-auto mb-3 mt-4 text-xl font-semibold leading-none tracking-tighter text-black title-font">
+                        <h2 className="mx-auto mb-4 mt-3 mt-4 text-xl font-semibold leading-none tracking-tighter text-black title-font">
                         📌 Habilidades que pueden esperar de mi:
                         </h2>
                         <p className="flex items-center mb-1 ml-4 font-semibold text-blueGray-700 ">

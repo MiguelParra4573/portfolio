@@ -33,7 +33,7 @@ const Footer = () => {
                     </div>
                     <div className="flex justify-center mt-7">
                         <h3 className="text-gray-700 uppercase dark:text-white">📌 Sigueme en:</h3>
-                        <span className="block ml-5 text-lg text-gray-600 dark:text-gray-400">✨ Twiter:  <a href="https://twitter.com/JMiguelPM" target="_blank" className="hover:text-blue-600" >@JMiguelPM</a> | 📚 GitHub: <a href="https://github.com/Miguel-Parra-M" target="_blank" className="hover:text-blue-600" >Miguel-Parra-M</a> | 📞 WhatsApp: <a href="https://wa.me/593997392002" target="_blank" className="hover:text-blue-600" > (+593) 997392002</a> | 📬 email: <span className="hover:text-blue-600"> pmjm0990@gmail.com </span> </span>
+                        <span className="block ml-5 text-lg text-gray-600 dark:text-gray-400">✨ Twiter:  <a href="https://twitter.com/JMiguelPM" target="_blank" className="hover:text-blue-600" rel="noopener noreferrer" >@JMiguelPM</a> | 📚 GitHub: <a href="https://github.com/Miguel-Parra-M" target="_blank" className="hover:text-blue-600" rel="noopener noreferrer" >Miguel-Parra-M</a> | 📞 WhatsApp: <a href="https://wa.me/593997392002" target="_blank" className="hover:text-blue-600" rel="noopener noreferrer" > (+593) 997392002</a> | 📬 email: <span className="hover:text-blue-600"> pmjm0990@gmail.com </span> </span>
                     </div>
                     <hr className="h-px my-6 bg-gray-300 border-none dark:bg-gray-700"></hr>
                     <div>

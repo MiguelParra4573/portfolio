@@ -36,8 +36,8 @@ const Portfolio = () => {
         },{
             "id":6,
             "nameApp": "Country Quiz App",
-            "description": "https://quizapp05.herokuapp.com",
-            "web": "",
+            "description": "Con esta app puedes jugar, e intentando resolver la mayor cantidad de preguntas que sepas.",
+            "web": "https://quizapp05.herokuapp.com",
             "repo":"https://github.com/Miguel-Parra-M/countryQuizApp",
         }
     ]

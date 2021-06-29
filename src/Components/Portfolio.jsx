@@ -7,7 +7,7 @@ const Portfolio = () => {
             "id":1,
             "nameApp": "Weather App",
             "description": "EL objetivo de esta app es informarte el clima a diario y el que tendras durante la semana en curso.",
-            "web": "https://weatherapp05.herokuapp.com",
+            "web": "https://weather-app-nine-sigma.vercel.app",
             "repo":"https://github.com/Miguel-Parra-M/weatherApp",
         },{
             "id":2,
@@ -19,7 +19,7 @@ const Portfolio = () => {
             "id":3,
             "nameApp": "Look Job App",
             "description": "Deseas encontrar el trabajo de tus sueños, buscalo aqui, esta app te permitira idenfitifica el trabajo de tus sueños",
-            "web": "https://lookjobapp.herokuapp.com",
+            "web": "https://look-job-app.vercel.app",
             "repo":"https://github.com/Miguel-Parra-M/lookJobApp",
         },{
             "id":4,

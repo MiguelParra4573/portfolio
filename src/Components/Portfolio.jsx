@@ -5,10 +5,10 @@ const Portfolio = () => {
 
     const data = [{
             "id":1,
-            "nameApp": "Hero App",
-            "description": "La presente aplicacion permite buscar, y crear tu equipo de heroes, y villanos, escoje un maximo de 6 integrantes, pero 3 de ellos deben ser heroes y los otros 3 deben ser villanos, no olvides ver detalladamente a cada heroe y villano.",
-            "web": "",
-            "repo":"https://github.com/Miguel-Parra-M/superhero_app",
+            "nameApp": "Weather App",
+            "description": "EL objetivo de esta app es informarte el clima a diario y el que tendras durante la semana en curso.",
+            "web": "https://weatherapp05.herokuapp.com",
+            "repo":"https://github.com/Miguel-Parra-M/weatherApp",
         },{
             "id":2,
             "nameApp": "Windbnb App",
@@ -23,10 +23,10 @@ const Portfolio = () => {
             "repo":"https://github.com/Miguel-Parra-M/lookJobApp",
         },{
             "id":4,
-            "nameApp": "Weather App",
-            "description": "EL objetivo de esta app es informarte el clima a diario y el que tendras durante la semana en curso.",
-            "web": "https://weatherapp05.herokuapp.com",
-            "repo":"https://github.com/Miguel-Parra-M/weatherApp",
+            "nameApp": "Hero App",
+            "description": "La presente aplicacion permite buscar, y crear tu equipo de heroes, y villanos, escoje un maximo de 6 integrantes, pero 3 de ellos deben ser heroes y los otros 3 deben ser villanos, no olvides ver detalladamente a cada heroe y villano.",
+            "web": "",
+            "repo":"https://github.com/Miguel-Parra-M/superhero_app",
         },{
             "id":5,
             "nameApp": "To Do App",
